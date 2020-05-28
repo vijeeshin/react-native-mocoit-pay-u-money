@@ -1,7 +1,7 @@
 {
   "name": "react-native-mocoit-pay-u-money",
   "title": "React Native Mocoit Pay U Money From Mocoitlabs",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "React Native payumoney intergration for android",
   "main": "PayUMoney.js",
   "files": [

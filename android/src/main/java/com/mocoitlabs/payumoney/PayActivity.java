@@ -53,7 +53,7 @@ public class PayActivity extends AppCompatActivity {
         this.merchantSUrl = extras.getString("merchantSUrl");
         this.merchantFUrl = extras.getString("merchantFUrl");
         this.merchantSandbox = extras.getBoolean("merchantSandbox");
-   
+
 
         this.udf1 = extras.getString("udf1");
         this.udf2 = extras.getString("udf2");
@@ -69,6 +69,7 @@ public class PayActivity extends AppCompatActivity {
         try {
             this.MakePayment();
         } catch (Exception e) {
+            Log.e("ERROR_PAYU", e);
             e.printStackTrace();
         }
     }
@@ -164,6 +165,7 @@ public class PayActivity extends AppCompatActivity {
             } else if (resultModel != null && resultModel.getError() != null) {
                 intent.putExtra("success", false);
             } else {
+                Log.e("ERROR_PAYU", "Error response : " + resultModel.getError().getTransactionResponse());
                 intent.putExtra("success", false);
             }
         }

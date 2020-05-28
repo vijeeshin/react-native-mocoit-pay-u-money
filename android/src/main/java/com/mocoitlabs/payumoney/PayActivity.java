@@ -53,6 +53,7 @@ public class PayActivity extends AppCompatActivity {
         this.merchantSUrl = extras.getString("merchantSUrl");
         this.merchantFUrl = extras.getString("merchantFUrl");
         this.merchantSandbox = extras.getBoolean("merchantSandbox");
+   
 
         this.udf1 = extras.getString("udf1");
         this.udf2 = extras.getString("udf2");
@@ -88,6 +89,9 @@ public class PayActivity extends AppCompatActivity {
         }
         if(!TextUtils.isEmpty(this.email)) {
             builder.setEmail(this.email);
+        }
+        if(!TextUtils.isEmpty(this.phone)) {
+            builder.setPhone(this.phone);
         }
         if(!TextUtils.isEmpty(this.merchantId)) {
             builder.setMerchantId(this.merchantId);

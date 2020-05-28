@@ -69,7 +69,7 @@ public class PayActivity extends AppCompatActivity {
         try {
             this.MakePayment();
         } catch (Exception e) {
-            Log.e("ERROR_PAYU", e);
+            Log.e("ERROR_PAYU", e.getMessage());
             e.printStackTrace();
         }
     }

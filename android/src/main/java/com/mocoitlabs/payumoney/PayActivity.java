@@ -156,6 +156,7 @@ public class PayActivity extends AppCompatActivity {
                 if (transactionResponse.getTransactionStatus().equals(TransactionResponse.TransactionStatus.SUCCESSFUL)) {
                     intent.putExtra("success", true);
                 } else {
+                    Log.e("ERROR_PAYU", "Error response : " + resultModel.getError().getTransactionResponse());
                     intent.putExtra("success", false);
                 }
 

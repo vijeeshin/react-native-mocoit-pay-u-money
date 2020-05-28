@@ -44,6 +44,7 @@ export default class PayuMoney {
         reject({ success: false });
         removeSubscriptions();
       });
+
       PayuPay.makePayment(
         data.amount,
         data.txid,

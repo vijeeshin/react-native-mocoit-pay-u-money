@@ -60,7 +60,7 @@ public class MocoitPayUMoneyModule extends ReactContextBaseJavaModule implements
         ReactApplicationContext context = getReactApplicationContext();
         Activity currentActivity = getCurrentActivity();
         Intent intent = new Intent(currentActivity, PayActivity.class);
-        intent.putExtra("amount", Double.parseDouble(amount));
+        intent.putExtra("amount", amount);
         intent.putExtra("txnId", txnId);
         intent.putExtra("productName", productName);
         intent.putExtra("firstName", firstName);

@@ -2,6 +2,8 @@
 
 ## Getting started
 
+Pay u Money android mobile integration for android devices.
+
 `$ npm install react-native-mocoit-pay-u-money --save`
 
 ### Mostly automatic installation

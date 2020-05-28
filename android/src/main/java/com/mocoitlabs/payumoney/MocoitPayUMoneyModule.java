@@ -45,6 +45,7 @@ public class MocoitPayUMoneyModule extends ReactContextBaseJavaModule implements
                             final String merchantSUrl,
                             final String merchantFUrl,
                             final Boolean merchantSandbox,
+                            final String hash
                             final String udf1,
                             final String udf2,
                             final String udf3,
@@ -55,7 +56,7 @@ public class MocoitPayUMoneyModule extends ReactContextBaseJavaModule implements
                             final String udf8,
                             final String udf9,
                             final String udf10,
-                            final String hash) {
+                            ) {
         ReactApplicationContext context = getReactApplicationContext();
         Activity currentActivity = getCurrentActivity();
         Intent intent = new Intent(currentActivity, PayActivity.class);

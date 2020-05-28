@@ -54,16 +54,16 @@ public class PayActivity extends AppCompatActivity {
         this.merchantFUrl = extras.getString("merchantFUrl");
         this.merchantSandbox = extras.getBoolean("merchantSandbox");
 
-        this.udf1 = extras.getBoolean("udf1");
-        this.udf2 = extras.getBoolean("udf2");
-        this.udf3 = extras.getBoolean("udf3");
-        this.udf4 = extras.getBoolean("udf4");
-        this.udf5 = extras.getBoolean("udf5");
-        this.udf6 = extras.getBoolean("udf6");
-        this.udf7 = extras.getBoolean("udf7");
-        this.udf8 = extras.getBoolean("udf8");
-        this.udf9 = extras.getBoolean("udf9");
-        this.udf10 = extras.getBoolean("udf10");
+        this.udf1 = extras.getString("udf1");
+        this.udf2 = extras.getString("udf2");
+        this.udf3 = extras.getString("udf3");
+        this.udf4 = extras.getString("udf4");
+        this.udf5 = extras.getString("udf5");
+        this.udf6 = extras.getString("udf6");
+        this.udf7 = extras.getString("udf7");
+        this.udf8 = extras.getString("udf8");
+        this.udf9 = extras.getString("udf9");
+        this.udf10 = extras.getString("udf10");
         this.hash = extras.getString("hash");
     }
 

@@ -74,61 +74,61 @@ public class PayActivity extends AppCompatActivity {
 
     private void MakePayment() throws Exception {
         PayUmoneySdkInitializer.PaymentParam.Builder builder = new PayUmoneySdkInitializer.PaymentParam.Builder();
-        if(!TextUtils.isEmpty(this.amount.trim())) {
+        if(!TextUtils.isEmpty(this.amount)) {
             builder.setAmount(this.amount);
         }
-        if(!TextUtils.isEmpty(this.txnId.trim())) {
+        if(!TextUtils.isEmpty(this.txnId)) {
             builder.setTxnId(this.txnId);
         }
-        if(!TextUtils.isEmpty(this.productName.trim())) {
+        if(!TextUtils.isEmpty(this.productName)) {
             builder.setProductName(this.productName);
         }
-        if(!TextUtils.isEmpty(this.firstName.trim())) {
+        if(!TextUtils.isEmpty(this.firstName)) {
             builder.setFirstName(this.firstName);
         }
-        if(!TextUtils.isEmpty(this.email.trim()) && Patterns.EMAIL_ADDRESS.matcher(this.email.trim()).matches()) {
+        if(!TextUtils.isEmpty(this.email)) {
             builder.setEmail(this.email);
         }
-        if(!TextUtils.isEmpty(this.merchantId.trim())) {
+        if(!TextUtils.isEmpty(this.merchantId)) {
             builder.setMerchantId(this.merchantId);
         }
-        if(!TextUtils.isEmpty(this.merchantKey.trim())) {
+        if(!TextUtils.isEmpty(this.merchantKey)) {
             builder.setKey(this.merchantKey);
         }
-        if(!TextUtils.isEmpty(this.merchantSUrl.trim()) && Patterns.WEB_URL.matcher(this.merchantSUrl.trim()).matches()) {
+        if(!TextUtils.isEmpty(this.merchantSUrl)) {
             builder.setsUrl(this.merchantSUrl);
         }
-        if(!TextUtils.isEmpty(this.merchantFUrl.trim()) && Patterns.WEB_URL.matcher(this.merchantFUrl.trim()).matches()) {
+        if(!TextUtils.isEmpty(this.merchantFUrl)) {
             builder.setfUrl(this.merchantFUrl);
         }
-        if(!TextUtils.isEmpty(this.udf1.trim())) {
+        if(!TextUtils.isEmpty(this.udf1)) {
             builder.setUdf1(this.udf1);
         }
-        if(!TextUtils.isEmpty(this.udf2.trim())) {
+        if(!TextUtils.isEmpty(this.udf2)) {
             builder.setUdf2(this.udf2);
         }
-        if(!TextUtils.isEmpty(this.udf3.trim())) {
+        if(!TextUtils.isEmpty(this.udf3)) {
             builder.setUdf3(this.udf3);
         }
-        if(!TextUtils.isEmpty(this.udf4.trim())) {
+        if(!TextUtils.isEmpty(this.udf4)) {
             builder.setUdf4(this.udf4);
         }
-        if(!TextUtils.isEmpty(this.udf5.trim())) {
+        if(!TextUtils.isEmpty(this.udf5)) {
             builder.setUdf5(this.udf5);
         }
-        if(!TextUtils.isEmpty(this.udf6.trim())) {
+        if(!TextUtils.isEmpty(this.udf6)) {
             builder.setUdf6(this.udf6);
         }
-        if(!TextUtils.isEmpty(this.udf7.trim())) {
+        if(!TextUtils.isEmpty(this.udf7)) {
             builder.setUdf7(this.udf7);
         }
-        if(!TextUtils.isEmpty(this.udf8.trim())) {
+        if(!TextUtils.isEmpty(this.udf8)) {
             builder.setUdf8(this.udf8);
         }
-        if(!TextUtils.isEmpty(this.udf9.trim())) {
+        if(!TextUtils.isEmpty(this.udf9)) {
             builder.setUdf9(this.udf9);
         }
-        if(!TextUtils.isEmpty(this.udf10.trim())) {
+        if(!TextUtils.isEmpty(this.udf10)) {
             builder.setUdf10(this.udf10);
         }
 

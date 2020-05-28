@@ -1,7 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.mocoitlabs.payumoney">
- <application
-        android:usesCleartextTraffic="true">
+ <application>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity android:name=".PayActivity" />
     </application>

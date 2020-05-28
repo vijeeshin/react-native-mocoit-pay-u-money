@@ -65,7 +65,11 @@ public class PayActivity extends AppCompatActivity {
         this.udf9 = extras.getString("udf9");
         this.udf10 = extras.getString("udf10");
         this.hash = extras.getString("hash");
-        this.MakePayment();
+        try {
+            this.MakePayment();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void MakePayment() throws Exception {

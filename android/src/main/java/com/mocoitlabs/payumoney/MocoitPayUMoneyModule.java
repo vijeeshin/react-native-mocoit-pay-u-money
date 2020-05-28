@@ -55,7 +55,7 @@ public class MocoitPayUMoneyModule extends ReactContextBaseJavaModule implements
                             final String udf7,
                             final String udf8,
                             final String udf9,
-                            final String udf10,
+                            final String udf10
                             ) {
         ReactApplicationContext context = getReactApplicationContext();
         Activity currentActivity = getCurrentActivity();

@@ -45,7 +45,7 @@ public class MocoitPayUMoneyModule extends ReactContextBaseJavaModule implements
                             final String merchantSUrl,
                             final String merchantFUrl,
                             final Boolean merchantSandbox,
-                            final String hash
+                            final String hash,
                             final String udf1,
                             final String udf2,
                             final String udf3,
